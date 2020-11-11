@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+       body {
+            height: 100%;
+            background-color: unset;
+            padding-top: 15vh;
+        }
+        .container1 {
+            margin: unset; 
+            height: auto; 
+            width: 100%;
+            padding: 20px;
+        }
+        .proj-block {
+            height: 30vh;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #fff;
+            padding: unset;
+        } 
+         .headertxt {
+            padding-top: 10vh;
+            font-size: 40px;
+            text-align: center;
+            color: #ffa90c           
+        }
+        .card {
+            text-align: center;
+            color: #FFFFFF;
+            width: 100%;
+            height: 100%;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10%;
+        }
+         .front {
+            z-index: 2;
+            transform: rotateY(0deg);
+            height: 100%;
+        }
+        .back{
+            font-size: 15px;
+            transform: rotateY(180deg);
+            text-align: center;
+            vertical-align: middle;
+            height: 100%;
+        }
+        .front, .back {
+            margin-top: 10px;
+            width: 100%;
+            padding: 5px;
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: 'Courgette', cursive;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: unset;
+            position: relative;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+        }
+        .card.flipped {
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+</style>
+<body>
+    <div class="row no-gutters container1">
+        <div class="col-sm-12 headertxt">
+            Projects
+        </div>
+    </div>
+    <div class="row  container1">
+        <div  class="col-sm-3 proj-block">
+            <section class="container">
+                <div class="card" id="prj1" onclick="flip('prj1')">
+                <div class="front">
+                    Gomo CMS
+                </div>
+                <div class="back">
+                    This project main aim to create an authorization and access to the user by admin, which will have user permissions and group level permissions involved.
+                    used technologies angular7, Sql server, .net framework api
+                </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-3 offset-sm-1 proj-block">
+            <section class="container">
+                <div class="card" id="prj2" onclick="flip('prj2')">
+                <div class="front">
+                   AdiVishnu Blog
+                </div>
+                <div class="back">
+                   Designed Project  main aim to show case the greatness and memories of writer adivishnu garu.
+                </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="col-sm-3 offset-sm-1 proj-block">
+            <section class="container">
+                <div class="card" id="prj3" onclick="flip('prj3')">
+                <div class="front">
+                  Task Alert System
+                </div>
+                <div class="back">
+                 This project eliminates manual creating and assigning of tasks from the  authority, admin can create tasks. Here we used angular 8, mysql, .net core api.
+                </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

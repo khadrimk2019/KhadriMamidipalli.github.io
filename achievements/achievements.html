@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+          ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+         body {
+            height: 100%;
+            background-color: unset;
+            padding-top: 15vh;
+            padding: 30px;
+            overflow-y: scroll;
+        }
+        .container1 {
+            margin: unset; 
+            height: auto; 
+            width: 100%;
+            padding: 20px;
+        }
+        .headertxt {
+            padding-top: 10vh;
+            font-size: 40px;
+            text-align: center;
+            color: #ffa90c           
+        }
+    </style>
+</head>
+<body>
+    <div class="row no-gutters container1">
+        <div class="col-sm-12 headertxt">
+           Achievements
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <span>1</span>
+                  </div>
+                  <div class="carousel-item">
+                   <span>2</span>
+                  </div>
+                  <div class="carousel-item">
+                 <span>3</span>  
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

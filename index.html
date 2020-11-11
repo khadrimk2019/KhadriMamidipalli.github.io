@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khadri Mamidipalli Resume</title>
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- font-awesome icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <nav class="navbar navbar-expand-sm  navbar-dark header" style="height: 50px;">
+            <a class="navbar-brand" href="#">𝕶𝖍𝖆𝖉𝖗𝖎 𝖒𝖆𝖒𝖎𝖉𝖎𝖕𝖆𝖑𝖑𝖎</a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+              <!--   onclick="goToSection('homesection')"  -->
+                    <a class="nav-link" href="home/home.html"
+                        target="homeframe"><i class="fa fa-home"></i>𝐇𝐨𝐦𝐞</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('education')" target="educationframe"
+                        href="education/education.html">
+                        <i class="fa fa-graduation-cap"></i>𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('skills')" target="skillsframe"
+                        href="skills/skills.html">
+                        <i class="fas fa-laptop-code"></i>𝐒𝐤𝐢𝐥𝐥𝐬</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('projects')" target="projectsframe"
+                        href="projects/projects.html"><i class="fa fa-cogs"></i>𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('experience')" target="expframe"
+                        href="experience/experience.html"><i class="fa fa-user-circle"></i>𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞</a>
+                </li>
+               <!--  <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('certificationsection')" id="cer"
+                        href="certifications/certifications.html"
+                        target="certframe"><i class="fa fa-certificate"></i>𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('achievements')" target="achievframe"
+                        href="achievements/achievements.html"><i class="fa fa-trophy"></i>𝐀𝐜𝐡𝐢𝐞𝐯𝐞𝐦𝐞𝐧𝐭𝐬</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="goToSection('contact')" target="contactframe"
+                        href="contact/contact.html"><i class="fa fa-id-badge"></i>𝐂𝐨𝐧𝐭𝐚𝐜𝐭</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="content-section" id="homeframe">
+            <iframe id="homesection" src="/home/home.html"  name="homeframe" class="framebox" width="100%"></iframe>
+        </div>
+        <div class="content-section" id="educationsection">
+            <iframe id="education" style="overflow:hidden; 
+            display:block; position: absolute; height: 100%; width: 100%" 
+             name="educationframe" class="framebox" width="100%" frameborder="0"></iframe>
+        </div>
+
+        <div class="content-section" id="skillssection">
+            <iframe id="skills" style="overflow:hidden; 
+            display:block; position: absolute; height: 100%; width: 100%"
+             name="skillsframe" class="framebox" width="100%" frameborder="0"></iframe>
+        </div>
+        <div class="content-section" id="projectssection">
+            <iframe id="projects" name="projectsframe" class="framebox" width="100%" frameborder="0"></iframe>
+        </div>
+        <div class="content-section" id="expsection">
+            <iframe id="experience" name="expframe" class="framebox" width="100%" frameborder="0"></iframe>
+        </div>
+      <!--   <div class="content-section" id="certificationsection">
+            <iframe id="certframe" name="certframe" class="framebox" width="100%"></iframe>
+        </div> -->
+        <div class="content-section" id="achievementsection">
+            <iframe id="achievements" name="achievframe" class="framebox" width="100%" frameborder="0"></iframe>
+        </div>
+        <div class="content-section" id="contactsection">
+            <iframe id="contact" name="contactframe" class="framebox" width="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- bootstrap required files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script href="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
